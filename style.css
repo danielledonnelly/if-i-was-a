@@ -65,12 +65,12 @@ a:hover {
   font-size: 20px;
 }
 
-/* Projects Section Styles */
+/* Things Styles */
 p {
   text-align: justify;
 }
 
-#projects {
+#things {
   padding: 20px;
   text-align: center;
   display: flex;
@@ -78,7 +78,7 @@ p {
   justify-content: space-between;
 }
 
-.project-tile {
+.thing-tile {
   background-color: #414044;
   border-radius: 5px;
   padding: 20px;
@@ -88,27 +88,15 @@ p {
   width: 46%;
 }
 
-.project-tile h2 {
+.thing-tile h2 {
   font-size: 22px;
 }
 
-.project-tile p {
+.thing-tile p {
   font-size: 16px;
 }
 
-.project-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-links a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.project-button {
+.thing-button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #535664;
@@ -120,79 +108,79 @@ p {
   margin: auto;
 }
 
-.project-button:hover {
+.thing-button:hover {
   background-color: #3a3d44;
   color: rgb(204, 204, 204) !important;
 }
 
 /* Media Query for mini screens */
 @media screen and (max-width: 650px) {
-  .project-tile {
+  .thing-tile {
     width: 100%;
   }
 }
 
 /* Media Query for small screens */
 @media screen and (min-width: 651px) and (max-width: 800px) {
-  .project-tile {
+  .thing-tile {
     width: 41%; 
   }
 
-  .project-tile:nth-child(2n) {
+  .thing-tile:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 /* Media Query for medium screens */
 @media screen and (min-width: 801px) and (max-width: 1000px) {
-  .project-tile {
+  .thing-tile {
     width: 42%; 
   }
 
-  .project-tile:nth-child(2n) {
+  .thing-tile:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 /* Media Query for large screens */
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
-  .project-tile {
+  .thing-tile {
     width: 43%;
   }
-  .project-tile:nth-child(2n) {
+  .thing-tile:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 /* Media Query for larger screens */
 @media screen and (min-width: 1201px) and (max-width: 1500px) {
-  .project-tile {
+  .thing-tile {
     width: 45%;
   }
   
-  .project-tile:nth-child(2n) {
+  .thing-tile:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 /* Media Query for extra large screens */
 @media screen and (min-width: 1501px) and (max-width: 1800px) {
-  .project-tile {
+  .thing-tile {
     width: 46%; 
   }
   
-  .project-tile:nth-child(3n) {
+  .thing-tile:nth-child(3n) {
     margin-right: 0;
   }
 }
 
 /* Media Query for ultra large screens */
 @media screen and (min-width: 1801px) {
-  .project-tile {
+  .thing-tile {
     width: 47%; 
   }
   
-  .project-tile:nth-child(3n) {
+  .thing-tile:nth-child(3n) {
     margin-right: 0;
   }
 }
