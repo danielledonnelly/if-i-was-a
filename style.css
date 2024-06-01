@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* Navbar Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 16px 0;
+}
+
+#navbar nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navbar nav ul li {
+  display: inline;
+  margin-right: 32px;
+}
+
+#navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #737089 !important; /* I don't get why I need this !important tag for this to work honestly... but I do */
+}
+
+.beef-blue {
+  color: #00BEEF; /* All the best hex codes spell words */
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro-text h1 {
+  font-size: 64px;
+}
+
+.intro-text p {
+  font-size: 20px;
+}
+
+/* Projects Section Styles */
+p {
+  text-align: justify;
+}
+
+#projects {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-tile {
+  background-color: #414044;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 46%;
+}
+
+.project-tile h2 {
+  font-size: 22px;
+}
+
+.project-tile p {
+  font-size: 16px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #535664;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  width: 180px;
+  margin: auto;
+}
+
+.project-button:hover {
+  background-color: #3a3d44;
+  color: rgb(204, 204, 204) !important;
+}
+
+/* Media Query for mini screens */
+@media screen and (max-width: 650px) {
+  .project-tile {
+    width: 100%;
+  }
+}
+
+/* Media Query for small screens */
+@media screen and (min-width: 651px) and (max-width: 800px) {
+  .project-tile {
+    width: 41%; 
+  }
+
+  .project-tile:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/* Media Query for medium screens */
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .project-tile {
+    width: 42%; 
+  }
+
+  .project-tile:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/* Media Query for large screens */
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .project-tile {
+    width: 43%;
+  }
+  .project-tile:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/* Media Query for larger screens */
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  .project-tile {
+    width: 45%;
+  }
+  
+  .project-tile:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/* Media Query for extra large screens */
+@media screen and (min-width: 1501px) and (max-width: 1800px) {
+  .project-tile {
+    width: 46%; 
+  }
+  
+  .project-tile:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+/* Media Query for ultra large screens */
+@media screen and (min-width: 1801px) {
+  .project-tile {
+    width: 47%; 
+  }
+  
+  .project-tile:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
